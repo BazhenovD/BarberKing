@@ -1,0 +1,236 @@
+/* Configs */
+/* Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body {
+  font-size: 1rem;
+  color: black;
+}
+/*fonts*/
+@font-face {
+  font-family: azedoBold;
+  /* Имя шрифта */
+  src: url(../fonts/Azedo_Bold.otf);
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: azedoLight;
+  /* Имя шрифта */
+  src: url(../fonts/Azedo_Light.otf);
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: born;
+  /* Имя шрифта */
+  src: url(../fonts/Born.otf);
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: SlimTony;
+  /* Имя шрифта */
+  src: url(../fonts/Fenotype_SlimTony.otf);
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: proximanovaBold;
+  /* Имя шрифта */
+  src: url(../fonts/proximanova_bold.otf);
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: proximanovacondregular;
+  /* Имя шрифта */
+  src: url(../fonts/proximanovacond_regular.otf);
+  /* Путь к файлу со шрифтом */
+}
+/* Layout */
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+.header .logo,
+.footer .logo {
+  padding-right: 20px;
+}
+/*.footer{
+
+	.logo{
+		float: left;
+		padding:0 10%;
+	}
+	nav.menu{
+		float: right;
+		padding: 0 10%;
+	}
+ } */
+.fluid {
+  width: 100%;
+}
+.fixed {
+  padding: 0 100px;
+}
+.absolute {
+  position: absolute;
+}
+nav.menu ul {
+  padding-left: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav.menu ul li {
+  display: inline-block;
+}
+nav.menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.85rem;
+  padding: 0 5px;
+}
+.segment {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  clear: both;
+}
+.segment.top_image #slide_01 {
+  position: relative;
+  z-index: 1;
+}
+.segment.top_image .name {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 2;
+  color: #FFF;
+  text-align: center;
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 17vw;
+}
+.segment.top_image .name #the_coolest {
+  position: relative;
+  font-family: proximanovaBold;
+  text-transform: uppercase;
+  font-size: 5vw;
+  margin-bottom: -3vw;
+}
+.segment.top_image .name #barbershop {
+  position: relative;
+  font-family: SlimTony;
+  font-size: 10vw;
+}
+.segment.look_book {
+  clear: both;
+  /*@media*/
+}
+.segment.look_book img {
+  display: block;
+  float: left;
+}
+.segment.look_book .photo_01 {
+  width: 40%;
+}
+.segment.look_book .photo_02 {
+  width: 60%;
+  height: 50%;
+}
+.segment.look_book .photo_03 {
+  width: 30%;
+  height: 50%;
+}
+.segment.look_book .photo_04 {
+  width: 30%;
+  height: 50%;
+}
+.segment_title {
+  font-family: proximanovacondregular;
+  text-transform: uppercase;
+  padding-bottom: .75rem;
+  margin-bottom: 4rem;
+  border-bottom: 2px solid #ffb433;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: black;
+}
+.first.column.quotes {
+  width: 30%;
+  float: left;
+}
+.first.column.quotes .best_masters {
+  display: inline-block;
+  font-family: proximanovacondregular;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  padding: 0 20px 0 0px;
+}
+.first.column.quotes .quotes {
+  display: inline-block;
+}
+.second.column {
+  display: inline-block;
+  width: 30%;
+  padding: 0px 20px 0 0px;
+  font-size: 16px;
+  font-family: born;
+}
+.third.column {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  padding: 0px 20px 0 0px;
+  font-size: 16px;
+  font-family: born;
+}
+.yellow_stripe {
+  position: absolute;
+  bottom: 400px;
+  right: 0;
+}
+.yellow_stripe .words {
+  transform: rotate(-90deg);
+  font-size: 48px;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 0 300px;
+}
+.yellow_stripe .line {
+  float: right;
+  padding: 200px 100px 0 20px;
+}
+.column_services {
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  float: left;
+  padding: 0px 20px 0 0px;
+}
+.column_services h3 {
+  font-family: "proximanovacondregular";
+  color: #212121;
+  line-height: 1.183;
+  text-align: left;
+  padding-bottom: 30px;
+  font-size: 2.3rem;
+}
+.reservation {
+  display: inline-block;
+  float: right;
+  display: block;
+}
